@@ -24,7 +24,8 @@ import { Formik } from 'formik';
 
 // project import
 import FirebaseSocial from './FirebaseSocial';
-import AnimateButton from 'components/@extended/AnimateButton';
+import AnimateButton from '../../../components/@extended/AnimateButton';
+
 
 // assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
