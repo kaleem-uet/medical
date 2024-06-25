@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { Grid, Skeleton, Stack } from '@mui/material';
 
 // project import
-import MainCard from 'components/MainCard';
+import MainCard from '../../components/MainCard';
 
 // ===============================|| COMPONENT - SKELETON ||=============================== //
 
