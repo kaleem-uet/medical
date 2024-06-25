@@ -9,7 +9,7 @@ import Facebook from '../../../assets/images/icons/facebook.svg';
 
 // ==============================|| FIREBASE - SOCIAL BUTTON ||============================== //
 
-const FirebaseSocial = () => {
+const SocialAuths = () => {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -63,4 +63,4 @@ const FirebaseSocial = () => {
   );
 };
 
-export default FirebaseSocial;
+export default SocialAuths;
