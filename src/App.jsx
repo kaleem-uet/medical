@@ -1,11 +1,16 @@
-import './App.css'
+import ThemeCustomization from './themes/index'
+import CustomRoute from './routes';
+// import ScrollTop from './components/ScrollTop';
 
 function App() {
 
   return (
-  <>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet at quo cupiditate neque consectetur aut beatae? Aut quas illo aliquam tempora fugit suscipit, labore, ipsum laboriosam, minima eligendi corrupti veniam.
-  </>
+    <ThemeCustomization>
+    {/* <ScrollTop> */}
+   
+      <CustomRoute />
+    {/* </ScrollTop> */}
+  </ThemeCustomization>
   )
 }
 
