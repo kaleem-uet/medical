@@ -1,12 +1,14 @@
-import './App.css'
-
+import ThemeCustomization from './themes/index'
+import CustomRoute from './routes';
 function App() {
-
   return (
-  <>
-    <h1>This is the third time im commiting changes..</h1>
-  </>
+    <ThemeCustomization>
+    {/* <ScrollTop> */}
+      <CustomRoute />
+    {/* </ScrollTop> */}
+  </ThemeCustomization>
   )
 }
 
 export default App
+
