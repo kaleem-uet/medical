@@ -1,3 +1,4 @@
+
 import ThemeCustomization from './themes/index'
 import CustomRoute from './routes';
 // import ScrollTop from './components/ScrollTop';
@@ -5,9 +6,10 @@ import CustomRoute from './routes';
 function App() {
 
   return (
+
     <ThemeCustomization>
     {/* <ScrollTop> */}
-   
+
       <CustomRoute />
     {/* </ScrollTop> */}
   </ThemeCustomization>
@@ -15,3 +17,4 @@ function App() {
 }
 
 export default App
+
