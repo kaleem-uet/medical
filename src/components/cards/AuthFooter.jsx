@@ -8,7 +8,7 @@ const AuthFooter = () => {
 
   return (
     <Container maxWidth="xl">
-      <Stack
+      {/* <Stack
         direction={matchDownSM ? 'column' : 'row'}
         justifyContent={matchDownSM ? 'center' : 'space-between'}
         spacing={2}
@@ -53,7 +53,7 @@ const AuthFooter = () => {
             Support
           </Typography>
         </Stack>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };
