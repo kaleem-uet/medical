@@ -18,6 +18,11 @@ const Color = Loadable(lazy(() => import('../pages/components-overview/Color')))
 // const Shadow = Loadable(lazy(() => import('../pages/components-overview/Shadow')));
 // const AntIcons = Loadable(lazy(() => import('../pages/components-overview/AntIcons')));
 
+
+// render - login
+const AuthLogin = Loadable(lazy(() => import('../pages/authentication/Login')));
+const AuthRegister = Loadable(lazy(() => import('../pages/authentication/Register')));
+
 function CustomRoute() {
   const routes = useRoutes([
     {
@@ -33,12 +38,29 @@ function CustomRoute() {
           element: <Color />
         },
         {
+          path: '/login',
+          element: <AuthLogin />
+        },
+        {
+          path: '/register',
+          element: <AuthRegister />
+        },
+        {
           path: 'dashboard',
           children: [
             {
               path: 'default',
               element: <DashboardDefault />
-            }
+            },
+           
+            {
+              path: 'register',
+              element: <AuthRegister />
+            },
+            {
+              path: 'login',
+              element: <AuthLogin />
+            },
           ]
         },
        
