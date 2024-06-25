@@ -1,5 +1,5 @@
-import ThemeCustomization from './themes/index'
-import CustomRoute from './routes';
+import ThemeCustomization from '@/themes/index'
+import CustomRoute from '@/routes';
 function App() {
   return (
     <ThemeCustomization>
