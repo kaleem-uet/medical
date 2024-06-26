@@ -10,12 +10,14 @@ import HeaderContent from './HeaderContent';
 
 // assets
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { useSelector } from 'react-redux';
 
 // ==============================|| MAIN LAYOUT - HEADER ||============================== //
 
 const Header = ({ open, handleDrawerToggle }) => {
   const theme = useTheme();
   const matchDownMD = useMediaQuery(theme.breakpoints.down('lg'));
+  const {drawerOpen} = useSelector((state) => state.menu);
 
   const iconBackColor = 'grey.100';
   const iconBackColorOpen = 'grey.200';
@@ -29,7 +31,11 @@ const Header = ({ open, handleDrawerToggle }) => {
         onClick={handleDrawerToggle}
         edge="start"
         color="secondary"
-        sx={{ color: 'text.primary', bgcolor: open ? iconBackColorOpen : iconBackColor, ml: { xs: 0, lg: -2 } }}
+        sx={{ 
+          color: 'text.primary', 
+          bgcolor: open ? iconBackColorOpen : iconBackColor, 
+          ml: drawerOpen ? {xs: 0, lg: -2} : 6
+        }}
       >
         {!open ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
       </IconButton>

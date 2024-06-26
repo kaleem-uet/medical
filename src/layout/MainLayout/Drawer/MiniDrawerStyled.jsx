@@ -23,7 +23,8 @@ const closedMixin = (theme) => ({
     duration: theme.transitions.duration.leavingScreen
   }),
   overflowX: 'hidden',
-  width: 0,
+  width: '60px',
+  // paddingTop: '10px',
   borderRight: 'none',
   boxShadow: theme.customShadows.z1
 });

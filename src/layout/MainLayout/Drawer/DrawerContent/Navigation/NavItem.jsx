@@ -113,6 +113,7 @@ const NavItem = ({ item, level }) => {
           {itemIcon}
         </ListItemIcon>
       )}
+
       {(drawerOpen || (!drawerOpen && level !== 1)) && (
         <ListItemText
           primary={
