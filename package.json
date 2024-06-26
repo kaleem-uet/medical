@@ -17,6 +17,7 @@
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@nivo/bar": "^0.87.0",
     "@nivo/circle-packing": "^0.87.0",
     "@reduxjs/toolkit": "^2.2.5",
     "formik": "^2.4.6",
