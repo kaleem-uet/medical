@@ -144,7 +144,7 @@ const Profile = () => {
                             <Stack>
                               <Typography variant="h6">Admin</Typography>
                               <Typography variant="body2" color="textSecondary">
-                                Doctor | MBBS
+                                Doctor
                               </Typography>
                             </Stack>
                           </Stack>
