@@ -23,13 +23,13 @@ import * as Yup from 'yup';
 import { Formik } from 'formik';
 
 // project import
-import FirebaseSocial from './FirebaseSocial';
 import AnimateButton from '../../../components/@extended/AnimateButton';
 
 import { strengthColor, strengthIndicator } from '../../../utils/password-strength';
 
 // assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
+import SocialAuths from './SocialAuths';
 
 // ============================|| FIREBASE - REGISTER ||============================ //
 
@@ -251,7 +251,7 @@ const AuthRegister = () => {
                 </Divider>
               </Grid>
               <Grid item xs={12}>
-                <FirebaseSocial />
+                <SocialAuths />
               </Grid>
             </Grid>
           </form>
