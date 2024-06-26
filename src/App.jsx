@@ -1,11 +1,12 @@
 import ThemeCustomization from '@/themes/index'
 import CustomRoute from '@/routes';
+import ScrollTop from '@/components/ScrollTop'
 function App() {
   return (
     <ThemeCustomization>
-    {/* <ScrollTop> */}
+    <ScrollTop>
       <CustomRoute />
-    {/* </ScrollTop> */}
+    </ScrollTop>
   </ThemeCustomization>
   )
 }

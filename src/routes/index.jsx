@@ -5,7 +5,7 @@ import { lazy } from 'react';
 // project import
 import Loadable from '../components/Loadable';
 import MainLayout from '../layout/MainLayout';
-
+import MinimalLayout from '../layout/MinimalLayout'
 // render - dashboard
 const DashboardDefault = Loadable(lazy(() => import('../pages/dashboard')));
 
@@ -67,9 +67,50 @@ function CustomRoute() {
       ]
     },
   ]);
+  const MainRoutes = useRoutes([
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        {
+          path: '/',
+          element: <DashboardDefault />
+        },
+        {
+          path: 'dashboard',
+          children: [
+            {
+              path: 'default',
+              element: <DashboardDefault />
+            }
+          ]
+        },
+       
+      ]
+    },
+  ]);
+
+  const LoginRoutes  = useRoutes([
+    {
+      path: "/",
+      element: <MinimalLayout />,
+      children: [
+        {
+          path: '/',
+          element: < AuthLogin/>
+        },
+        {
+          path: '/register',
+          element: < AuthRegister/>
+        }
+      ]
+    },
+  ]);
+
+  const isLogin=true
   return (
     <>
-      {routes}
+    {isLogin ? (<> {MainRoutes} </>):(<>{LoginRoutes}</>)}
     </>
   );
 }
